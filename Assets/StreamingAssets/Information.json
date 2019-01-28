@@ -1,0 +1,157 @@
+{
+
+	"information": [
+
+		{
+
+			"id": 0,            
+            
+			"BigTitle": "01湖南长沙科技新城",
+            
+            "ImagePath": "image00.jpg",
+            
+            "VideoPath":"01湖南长沙科技新城.mp4"
+
+		},
+
+		{
+
+			"id": 1,
+           
+			"BigTitle": "02重庆两江健康科技城",
+            
+            "ImagePath": "image01.jpg",
+            
+             "VideoPath":"02重庆两江健康科技城.mp4"
+
+		},
+        {
+            "id": 2,
+            
+             "BigTitle":"03山西智慧科技城",
+            
+             "ImagePath": "image02.jpg",
+            
+             "VideoPath":"03山西智慧科技城.mp4"
+            
+        },
+        {
+            "id": 3,
+            
+			"BigTitle": "04辽宁京沈智造科技城",
+            
+                         "ImagePath": "image03.jpg",
+            
+             "VideoPath":"04辽宁京沈智造科技城.mp4"
+            
+        },
+        {
+            "id": 4,
+            
+			"BigTitle": "05山东健康科技智慧城",
+                         "ImagePath": "image04.jpg",
+                    
+            "VideoPath":"05山东健康科技智慧城.mp4"
+            
+        },
+        {
+            "id": 5,
+
+			"BigTitle": "06北京岭秀",
+            
+                         "ImagePath": "image05.jpg",
+            
+            "VideoPath":"06北京岭秀.mp4"
+            
+        }, 
+        {
+            "id": 6,
+            
+			"BigTitle": "07天津金科天湖",
+            
+                         "ImagePath": "image06.jpg",
+            
+            "VideoPath":"07天津金科天湖.mp4"
+            
+        },
+        {
+            "id": 7,
+            
+			"BigTitle": "08金科山水洲",
+            
+                         "ImagePath": "image07.jpg",
+            
+            "VideoPath":"08金科山水洲.mp4"
+            
+        },
+        {
+            "id": 8,       
+
+			"BigTitle": "09四川金科宽窄水乡",
+            
+                         "ImagePath": "image08.jpg",
+            
+            "VideoPath":"09四川金科宽窄水乡.mp4"
+            
+        },
+        {
+            "id": 9,     
+
+			"BigTitle": "10重庆金科中华养生城",
+            
+                         "ImagePath": "image09.jpg",
+            
+            "VideoPath":"10重庆金科中华养生城.mp4"
+            
+        }
+
+
+
+
+
+
+
+
+	],
+    "Intro":[
+        {			
+			"id": 0,
+
+			"BigTitle": "交通规划",
+            
+            "VideoPath":"00交通规划.mp4"
+        },{
+            
+			"id": 1,
+
+			"BigTitle": "一心",
+             "VideoPath":"01一心.mp4"
+        }
+
+    ],
+    "Strategy":[
+        {			
+			"id": 0,
+
+			"BigTitle": "交通规划",
+            
+            "VideoPath":"00交通规划.mp4"
+        },
+        {
+            "id": 1,
+			"BigTitle": "一心",
+            "VideoPath":"01一心.mp4"
+            
+        }
+
+    ],
+    "Setup" : [
+        {
+            "BGMVolume" : 0.1,
+            "MainVideUrl":"晋中开发区.mp4"
+            
+        } 
+        
+    ]
+
+}
