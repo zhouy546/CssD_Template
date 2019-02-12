@@ -6,7 +6,11 @@ public class CreateUI : MonoBehaviour
 {
     public GameObject NodePrefab;
 
+    NodeCtr tempnodeCtr;
 
+    NodeCtr perviousCtr;
+
+    NodeCtr nextCtr;
     public void CreateMainUI(Node node) {
        GameObject g =  Instantiate(NodePrefab);
 
@@ -17,6 +21,22 @@ public class CreateUI : MonoBehaviour
 
         ValueSheet.NodeList.Add(myNode);
 
-        g.AddComponent<NodeCtr>();
+
+        //设置双向链表
+        tempnodeCtr = g.AddComponent<NodeCtr>();
+
+        if (node.ID > 0)
+        {
+            ValueSheet.nodeCtrs[node.ID - 1].NextNodeCtr = tempnodeCtr;
+        }
+
+
+        ValueSheet.nodeCtrs.Add(tempnodeCtr);
+
+
+        ValueSheet.nodeCtrs[node.ID].PerviousNodeCtr = perviousCtr;
+
+
+        perviousCtr = tempnodeCtr;
     }
 }

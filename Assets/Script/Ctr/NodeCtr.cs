@@ -6,7 +6,15 @@ public class NodeCtr : ICtr
 {
    public Node Node;
 
+    public NodeCtr NextNodeCtr;
+    public NodeCtr PerviousNodeCtr;
 
+    private void Start()
+    {
+        initialization();
+        Node = this.GetComponent<Node>();
+        animator = this.GetComponent<Animator>();
+    }
 
     public override void initialization()
     {
