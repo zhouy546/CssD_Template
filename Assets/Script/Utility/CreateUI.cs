@@ -6,6 +6,8 @@ public class CreateUI : MonoBehaviour
 {
     public GameObject NodePrefab;
 
+    public Transform M_Parent;
+
     NodeCtr tempnodeCtr;
 
     NodeCtr perviousCtr;
@@ -13,6 +15,8 @@ public class CreateUI : MonoBehaviour
     NodeCtr nextCtr;
     public void CreateMainUI(Node node) {
        GameObject g =  Instantiate(NodePrefab);
+
+        g.transform.SetParent(M_Parent);
 
         g.AddComponent<Node>();
 

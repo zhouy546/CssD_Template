@@ -4,7 +4,9 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-
+Assets/AmplifyShaderEditor/Examples*
+Assets/StreamingAssets/ScreenVideo*
+Assets/StreamingAssets/AVProVideoSamples*
 # Visual Studio cache directory
 .vs/
 

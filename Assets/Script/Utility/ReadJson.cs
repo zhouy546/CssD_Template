@@ -57,6 +57,12 @@ public class ReadJson : MonoBehaviour
 
         }
 
+        for (int j = 0; j < itemDate["ScreenProtectVideoPath"].Count; j++)
+        {
+            string videoPath = itemDate["ScreenProtectVideoPath"][j]["VideoPath"].ToString();
+            ValueSheet.ScreenProtectPath.Add(videoPath);
+        }
+
 
     }
 

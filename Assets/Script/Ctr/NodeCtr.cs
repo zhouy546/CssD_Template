@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NodeCtr : ICtr
 {
-   public Node Node;
+    public Node Node;
 
     public NodeCtr NextNodeCtr;
     public NodeCtr PerviousNodeCtr;
@@ -39,5 +39,13 @@ public class NodeCtr : ICtr
     public override void StopVideo()
     {
         base.StopVideo();
+    }
+
+    public bool isLast() {
+        return NextNodeCtr==null?true:false;
+    }
+
+    public bool isFirst() {
+        return PerviousNodeCtr == null ? true : false;
     }
 }

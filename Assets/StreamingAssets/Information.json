@@ -113,34 +113,23 @@
 
 
 	],
-    "Intro":[
+    "ScreenProtectVideoPath":[
         {			
-			"id": 0,
-
-			"BigTitle": "交通规划",
+			"id": 0,		
             
-            "VideoPath":"00交通规划.mp4"
-        },{
-            
-			"id": 1,
-
-			"BigTitle": "一心",
-             "VideoPath":"01一心.mp4"
-        }
-
-    ],
-    "Strategy":[
-        {			
-			"id": 0,
-
-			"BigTitle": "交通规划",
-            
-            "VideoPath":"00交通规划.mp4"
+            "VideoPath":"ScreenVideo/2.mp4"
         },
         {
             "id": 1,
-			"BigTitle": "一心",
-            "VideoPath":"01一心.mp4"
+            
+            "VideoPath":"ScreenVideo/2432科技城（电脑版慢）.mp4"
+            
+        },
+        
+        {
+            "id": 2,
+            
+            "VideoPath":"ScreenVideo/项目集锦.mp4"
             
         }
 
