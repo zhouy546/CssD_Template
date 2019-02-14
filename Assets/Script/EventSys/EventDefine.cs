@@ -1,6 +1,7 @@
 ﻿public enum EventDefine
 {
     StartScreenProtect,
-    LoadPlayScreenProtectVideo
+    LoadPlayScreenProtectVideo,
+    BtnShacking
 
 }

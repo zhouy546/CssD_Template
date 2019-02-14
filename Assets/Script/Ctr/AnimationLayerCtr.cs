@@ -36,17 +36,24 @@ public class AnimationLayerCtr : MonoBehaviour
 
     public void ShowScreenProtect() {
         StartCoroutine(LoopBGAnimation());
+        StartCoroutine(LoopBtnAnimation());
+    }
+
+    private IEnumerator LoopBtnAnimation() {
+        EventCenter.Broadcast(EventDefine.BtnShacking);
+        yield return new WaitForSeconds(timeRandom(3f,10f));
+        StartCoroutine(LoopBtnAnimation());
     }
 
     private IEnumerator LoopBGAnimation() {
         PlayBGanimation();
-        yield return new WaitForSeconds(timeRandom());
+        yield return new WaitForSeconds(timeRandom(15f,25f));
         StartCoroutine(LoopBGAnimation());
     }
 
 
-    private float timeRandom() {
-        return Random.Range(15f, 25f);
+    private float timeRandom(float min, float max) {
+        return Random.Range(min, max);
     }
 
 
