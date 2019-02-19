@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NodeCtr : ICtr
 {
@@ -9,11 +10,23 @@ public class NodeCtr : ICtr
     public NodeCtr NextNodeCtr;
     public NodeCtr PerviousNodeCtr;
 
+    public NodeComponentRef nodeComponentRef;
+
     private void Start()
     {
         initialization();
         Node = this.GetComponent<Node>();
         animator = this.GetComponent<Animator>();
+        nodeComponentRef = this.GetComponent<NodeComponentRef>();
+        if (isFirst())
+        {
+            show();
+        }
+        else {
+            hide();
+        }
+
+        StartCoroutine(LoadMainImage());
     }
 
     public override void initialization()
@@ -24,11 +37,13 @@ public class NodeCtr : ICtr
     public override void hide()
     {
         base.hide();
+        animator.SetBool("Show", false);
     }
 
     public override void show()
     {
         base.show();
+        animator.SetBool("Show", true);
     }
 
     public override void PlayVideo()
@@ -47,5 +62,11 @@ public class NodeCtr : ICtr
 
     public bool isFirst() {
         return PerviousNodeCtr == null ? true : false;
+    }
+
+    public IEnumerator LoadMainImage() {
+        yield return new WaitForSeconds(5f);
+        nodeComponentRef.MainImage.sprite = Node.MainImage;
+
     }
 }

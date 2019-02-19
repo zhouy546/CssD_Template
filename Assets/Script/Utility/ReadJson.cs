@@ -64,6 +64,8 @@ public class ReadJson : MonoBehaviour
         }
 
 
+        ValueSheet.currentTimeCountDown = ValueSheet.TimeCountDown = float.Parse( itemDate["Setup"][0]["ScreenProtectTimeCountDown"].ToString());
+
     }
 
     void SetupNodeList(int i, ref List<Node> nodes, string SectionStr)

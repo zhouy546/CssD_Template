@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class MainUICtr : ICtr
 {
-
+    public int currentDisplayID=0;
     // Start is called before the first frame update
     void Start()
     {
 
-   
+        EventCenter.AddListener<int>(EventDefine.ShowBoard, ShowBoard);
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
 
+    }
+
+    public void ShowBoard(int id) {
+        if (id != currentDisplayID) {
+            ValueSheet.nodeCtrs[currentDisplayID].hide();
+
+            ValueSheet.nodeCtrs[id].show();
+
+            currentDisplayID = id; 
         }
     }
+
+
+
 }

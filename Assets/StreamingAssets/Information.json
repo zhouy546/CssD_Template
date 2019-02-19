@@ -8,7 +8,7 @@
             
 			"BigTitle": "01湖南长沙科技新城",
             
-            "ImagePath": "image00.jpg",
+            "ImagePath": "/Node/Images/01image.jpg",
             
             "VideoPath":"01湖南长沙科技新城.mp4"
 
@@ -20,7 +20,7 @@
            
 			"BigTitle": "02重庆两江健康科技城",
             
-            "ImagePath": "image01.jpg",
+            "ImagePath": "/Node/Images/02image.jpg",
             
              "VideoPath":"02重庆两江健康科技城.mp4"
 
@@ -30,7 +30,7 @@
             
              "BigTitle":"03山西智慧科技城",
             
-             "ImagePath": "image02.jpg",
+             "ImagePath": "/Node/Images/03image.jpg",
             
              "VideoPath":"03山西智慧科技城.mp4"
             
@@ -40,7 +40,7 @@
             
 			"BigTitle": "04辽宁京沈智造科技城",
             
-                         "ImagePath": "image03.jpg",
+                         "ImagePath": "/Node/Images/04image.jpg",
             
              "VideoPath":"04辽宁京沈智造科技城.mp4"
             
@@ -49,7 +49,7 @@
             "id": 4,
             
 			"BigTitle": "05山东健康科技智慧城",
-                         "ImagePath": "image04.jpg",
+            "ImagePath": "/Node/Images/05image.jpg",
                     
             "VideoPath":"05山东健康科技智慧城.mp4"
             
@@ -59,7 +59,7 @@
 
 			"BigTitle": "06北京岭秀",
             
-                         "ImagePath": "image05.jpg",
+                         "ImagePath": "/Node/Images/06image.jpg",
             
             "VideoPath":"06北京岭秀.mp4"
             
@@ -69,7 +69,7 @@
             
 			"BigTitle": "07天津金科天湖",
             
-                         "ImagePath": "image06.jpg",
+                         "ImagePath": "/Node/Images/06image.jpg",
             
             "VideoPath":"07天津金科天湖.mp4"
             
@@ -79,7 +79,7 @@
             
 			"BigTitle": "08金科山水洲",
             
-                         "ImagePath": "image07.jpg",
+                         "ImagePath": "/Node/Images/07image.jpg",
             
             "VideoPath":"08金科山水洲.mp4"
             
@@ -89,7 +89,7 @@
 
 			"BigTitle": "09四川金科宽窄水乡",
             
-                         "ImagePath": "image08.jpg",
+                         "ImagePath": "/Node/Images/08image.jpg",
             
             "VideoPath":"09四川金科宽窄水乡.mp4"
             
@@ -99,7 +99,7 @@
 
 			"BigTitle": "10重庆金科中华养生城",
             
-                         "ImagePath": "image09.jpg",
+                         "ImagePath": "/Node/Images/09image.jpg",
             
             "VideoPath":"10重庆金科中华养生城.mp4"
             
@@ -137,7 +137,7 @@
     "Setup" : [
         {
             "BGMVolume" : 0.1,
-            "MainVideUrl":"晋中开发区.mp4"
+            "ScreenProtectTimeCountDown": 320
             
         } 
         

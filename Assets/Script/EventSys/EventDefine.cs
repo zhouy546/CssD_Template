@@ -1,7 +1,13 @@
 ﻿public enum EventDefine
 {
     StartScreenProtect,
+    resetTimeCountDown,
     LoadPlayScreenProtectVideo,
-    BtnShacking
+    BtnShacking,
+    ShowSwitchAnim,
+    HideScreenProtect,
+    ShowCanvasBar,
+    HideCanvasBar,
+    ShowBoard,
 
 }

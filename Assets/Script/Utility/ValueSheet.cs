@@ -8,4 +8,8 @@ public static class ValueSheet
     public static List<NodeCtr> nodeCtrs = new List<NodeCtr>();
 
     public static List<string> ScreenProtectPath = new List<string>();
+
+    public static float TimeCountDown = 300f;
+
+    public static float currentTimeCountDown =300f;
 }
