@@ -83,10 +83,10 @@ Material:
     - _BumpScale: 1
     - _ChromAberrAmountX: 0.02
     - _ChromAberrAmountY: -0
-    - _ColorScatterStrength: 0
+    - _ColorScatterStrength: 0.0231
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistortionAmplitude: 0
+    - _DistortionAmplitude: 0.124
     - _DistortionAnmSpeed: 2
     - _DistortionFrequency: 24.08
     - _DstBlend: 0

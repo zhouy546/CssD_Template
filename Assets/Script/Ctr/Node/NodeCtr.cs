@@ -14,10 +14,11 @@ public class NodeCtr : ICtr
 
     private void Start()
     {
-        initialization();
         Node = this.GetComponent<Node>();
         animator = this.GetComponent<Animator>();
         nodeComponentRef = this.GetComponent<NodeComponentRef>();
+        initialization();
+
         if (isFirst())
         {
             show();
@@ -32,18 +33,28 @@ public class NodeCtr : ICtr
     public override void initialization()
     {
         base.initialization();
+        setTitle();
     }
 
     public override void hide()
     {
         base.hide();
-        animator.SetBool("Show", false);
+
+
+        nodeComponentRef.playableDirector.Play(nodeComponentRef.playableAsset[1]);
+
+        //animator.SetBool("Show", false);
+
+        //nodeComponentRef.nodeTitleCtr.hide();
     }
 
     public override void show()
     {
         base.show();
-        animator.SetBool("Show", true);
+
+        nodeComponentRef.playableDirector.Play(nodeComponentRef.playableAsset[0]);
+        //animator.SetBool("Show", true);
+        //nodeComponentRef.nodeTitleCtr.show();
     }
 
     public override void PlayVideo()
@@ -68,5 +79,9 @@ public class NodeCtr : ICtr
         yield return new WaitForSeconds(5f);
         nodeComponentRef.MainImage.sprite = Node.MainImage;
 
+    }
+
+    private void setTitle() {
+        nodeComponentRef.nodeTitleCtr.MainTitle.text = Node.MainTitle;
     }
 }
