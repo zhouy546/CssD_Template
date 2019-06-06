@@ -22,6 +22,7 @@ public class BarCanvasCtr : ICtr
     {
         base.initialization();
         panelCtr.initialization();
+        EventCenter.Broadcast(EventDefine.ShowCanvasBar);
     }
 
     public override void show()

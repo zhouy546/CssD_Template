@@ -20,13 +20,11 @@ public class NodeTitleCtr : ICtr
 
     public override void show()
     {
-        base.show();
-        animator.SetBool("Show", true);
+
     }
 
     public override void hide()
     {
-        base.hide();
-        animator.SetBool("Show", false);
+
     }
 }

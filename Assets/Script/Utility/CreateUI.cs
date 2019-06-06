@@ -21,7 +21,7 @@ public class CreateUI : MonoBehaviour
         g.AddComponent<Node>();
 
         Node myNode = g.GetComponent<Node>();
-        myNode.initialization(node.ID, node.MainTitle, node.videoPath, node.ImagePath);
+        myNode.initialization(node.ID, node.MainTitle, node.videoPath, node.ImagePath,node.Years,node.IsDisplayYears,node.Years_Date,node.SubTitle,node.MainImage,node.isVideo);
 
         ValueSheet.NodeList.Add(myNode);
 

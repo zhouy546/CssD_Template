@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using RenderHeads.Media.AVProVideo;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -13,4 +14,14 @@ public class NodeComponentRef : MonoBehaviour
     public List<PlayableAsset> playableAsset = new List<PlayableAsset>();
 
     public NodeTitleCtr nodeTitleCtr;
+
+    public Text SubtTitleText;
+
+    public Text YearText;
+
+    public GameObject VideoCanvas;
+
+    public GameObject SpriteCanvas;
+
+    public MediaPlayer mediaPlayer;
 }

@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class PanelCtr : ICtr
 {
     public GameObject BarNode_Prefabs;
+    public static PanelCtr instance;
+    public Sprite VideoIconSprite;
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class PanelCtr : ICtr
             G.transform.localRotation = Quaternion.Euler(Vector3.zero);
             G.transform.localPosition = Vector3.zero;
             G.GetComponent<BarNodeCtr>().initialization(ValueSheet.NodeList[i].ID);
+            ValueSheet.barNodeCtrs.Add(G.GetComponent<BarNodeCtr>());
         }
       
     }
